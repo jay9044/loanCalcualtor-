@@ -37,6 +37,9 @@ function calculateResults() {
 }
 
 function showError(errorString) {
+  document.querySelector("#results").style.display = "none";
+  document.querySelector("#loading").style.display = "none";
+
   const errorDiv = document.createElement("div");
 
   //get elemetns
